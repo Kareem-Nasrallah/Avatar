@@ -15,11 +15,11 @@ body{
     align-items: center;
 }
 .container{
-    height: 90%;     /* he used a fixed height by 640px */
+    height: 90%;
     width: 90%;
     background:
     linear-gradient(to right, rgba(0, 0, 34, 0.7) 30%, rgba(0, 0, 0, 0.7))
-    no-repeat 100%/cover, url(download.webp)  no-repeat 100%/cover
+    no-repeat 100%/cover, url(download.webp)  no-repeat center/cover
     ;
     background-position: center;
 }
@@ -38,12 +38,12 @@ ul{
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;     /* it wont work untel you take it a width */
+    justify-content: space-evenly;
 }
 .content{
     display: flex;
     flex-direction: column;
-    width: 380px;      /* here he take it a 50% */
+    width: 380px;
     margin-top: 50px;
     padding: 30px;
 }
@@ -58,7 +58,7 @@ p{
 button{
     font-size: 30px;
     width: fit-content;
-    padding: 6px 10px;       /* here he make the height smaller than the width (6px) */
+    padding: 6px 10px;
     border-radius: 15px;
     border: transparent solid 2px;
     color: #001;
@@ -74,7 +74,7 @@ ul a:hover{
 }
 .container:hover{
     background:
-    linear-gradient(to right, rgba(0, 0, 34, 0.7) 30%, transparent)      /* he make the sconed color transparent */
-    no-repeat 100%/cover, url(download.webp)  no-repeat 100%/cover
+    linear-gradient(to right, rgba(0, 0, 34, 0.7) 30%, transparent)
+    no-repeat 100%/cover, url(download.webp)  no-repeat center/cover
     ;
 }
