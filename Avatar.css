@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+*{
+    color: white;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, #002 30%, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 90%;     /* he used a fixed height by 640px */
+    width: 90%;
+    background:
+    linear-gradient(to right, rgba(0, 0, 34, 0.7) 30%, rgba(0, 0, 0, 0.7))
+    no-repeat 100%/cover, url(download.webp)  no-repeat 100%/cover
+    ;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+header>a{
+    font-size: 30px;
+    font-weight: 700;
+}
+ul{
+    width: 60%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;     /* it wont work untel you take it a width */
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 380px;      /* here he take it a 50% */
+    margin-top: 50px;
+    padding: 30px;
+}
+h2{
+    font-size: 100px;
+}
+p{
+    font-size: 18px;
+    margin: 20px 0;
+    letter-spacing: 3px;
+}
+button{
+    font-size: 30px;
+    width: fit-content;
+    padding: 6px 10px;       /* here he make the height smaller than the width (6px) */
+    border-radius: 15px;
+    border: transparent solid 2px;
+    color: #001;
+}
+button:hover{
+    background: transparent;
+    color: white;
+    border: #fff solid 2px;
+    cursor: pointer;
+}
+ul a:hover{
+    border-bottom: #fff 2px solid;
+}
+.container:hover{
+    background:
+    linear-gradient(to right, rgba(0, 0, 34, 0.7) 30%, transparent)      /* he make the sconed color transparent */
+    no-repeat 100%/cover, url(download.webp)  no-repeat 100%/cover
+    ;
+}
